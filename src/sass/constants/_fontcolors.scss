@@ -1,0 +1,26 @@
+.title,
+.editor_table_css {
+    color: $color_text;
+}
+
+.level {
+    color: $color_light;
+}
+
+.editor_head,
+.editor_num,
+footer,
+.footer__list li a,
+.footer__list li a::after {
+    color: $color_text_light;
+}
+
+.file_name,
+.editor_table_html,
+.editor_num_html {
+    color: $color_text_dark;
+}
+
+.helper__title {
+    color: $color_table;
+}

@@ -1,0 +1,62 @@
+.shake-element {
+    animation: shake 0.1s infinite;
+}
+
+.shake-element.stop-shake {
+    animation: none;
+}
+
+.leave-up {
+    animation: leaveUp 0.5s infinite;
+}
+
+.tilt-animation {
+    animation: tilt 2s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes leaveUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes tilt {
+    0% {
+        transform: perspective(100px) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    25% {
+        transform: perspective(800px) rotateX(25deg) rotateY(25deg) scale(1.2);
+    }
+    50% {
+        transform: perspective(100px) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    75% {
+        transform: perspective(800px) rotateX(25deg) rotateY(-25deg) scale(1.2);
+    }
+    100% {
+        transform: perspective(100px) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+}

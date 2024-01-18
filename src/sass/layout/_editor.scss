@@ -1,0 +1,140 @@
+.editor {
+    width: 94%;
+    border: 1rem solid $color_dark;
+    border-radius: 0.4rem;
+}
+
+.editor__header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $color_border;
+}
+
+.editor__header__css,
+.editor__header__html {
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: $color_text_light;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        padding: 0.8rem 1.6rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+.editor__body {
+    display: flex;
+    flex-direction: row;
+}
+
+.editor__body__css,
+.editor__body__html {
+    width: 50%;
+    font-size: 1.4rem;
+    border: 1px solid $color_border;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        font-size: 1rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        font-size: 0.8rem;
+    }
+}
+
+.editor__body__html,
+.cm-lineNumbers {
+    color: $color_text_light;
+    background-color: $color_dark_html;
+}
+
+.editor__body__css {
+    display: flex;
+    width: 50%;
+
+    color: $color_text;
+    background-color: $color_white;
+}
+
+.editor_num {
+    width: 1.7rem;
+    text-align: center;
+    line-height: 1.7rem;
+    padding-top: 5px;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        line-height: 1.6rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        line-height: 1.3rem;
+    }
+}
+
+.editor_content {
+    width: calc(100% - 1.7rem);
+    padding: 5px 3px;
+    line-height: 1.7rem;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        line-height: 1.6rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        line-height: 1.3rem;
+    }
+}
+
+.editor__input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 2rem;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        height: 1.6rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        height: 1.3rem;
+    }
+}
+
+#selector-input {
+    border: none;
+    height: 1.6rem;
+    font-size: 1.4rem;
+    width: 70%;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        height: 1.3rem;
+        font-size: 1.1rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        height: 0.9rem;
+        font-size: 0.7rem;
+    }
+}
+
+.btn_submit {
+    height: 2rem;
+    padding: 0.2rem 0.6rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    background-color: $color_white;
+    border-bottom: 2px solid $color_text_dark;
+    transition: all ease 0.4s;
+    &:hover {
+        cursor: pointer;
+        color: $color_white;
+        background-color: $color_text_dark;
+    }
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        height: 1.6rem;
+        padding: 0.1rem 0.4rem;
+        margin-right: 0.8rem;
+        font-size: 1rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        height: 1.3rem;
+        padding: 0.1rem 0.3rem;
+        margin-right: 0.6rem;
+        font-size: 0.8rem;
+    }
+}

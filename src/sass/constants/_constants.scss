@@ -1,0 +1,33 @@
+$color_white: #fff;
+$color_background: #2e2a23;
+$color_text: #6d6a66;
+$color_text_light: #a5a3a1;
+$color_text_dark: #5f5d59;
+$color_table: #d08f29;
+$color_table_shadow: #8a5d17;
+$color_light: #dddddd;
+$color_neutral: #777777;
+$color_dark_0: #27241f;
+$color_dark_html: #201d19;
+$color_dark: #1b1813;
+$color_border: #333333;
+
+$desktop-breackpoint: 1000px;
+$tablet-breackpoint: 800px;
+$mobile-breackpoint: 490px;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Fira Code', Menlo, monospace;
+    height: 100vh;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        font-size: 1.3rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        font-size: 1rem;
+    }
+}

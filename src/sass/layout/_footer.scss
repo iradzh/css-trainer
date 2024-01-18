@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 4rem;
+    width: 100%;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        height: 3rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        height: 3rem;
+    }
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    list-style: none;
+}
+
+.footer__rss_logo {
+    height: 27px;
+    padding: 4px 6px;
+    background-color: $color_text_light;
+    border-radius: 3px;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        height: 24px;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        padding: 2px 3px;
+        height: 16px;
+    }
+}
