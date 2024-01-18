@@ -1,0 +1,104 @@
+{
+  "levels": [
+    {
+      "levelNb": 1,
+      "title": "Select the plates",
+      "levelName": "A",
+      "selectorType": "Type",
+      "description": "Selects all elements of type A. Type refers to the type of tag, so div, p and ul are all different element types.",
+      "html": "<div class='table'><my-plate></my-plate><my-plate></my-plate></div>",
+      "example": "div selects all div elements.\n",
+      "correct": "my-plate"
+    },
+    {
+      "levelNb": 2,
+      "title": "Select the fancy plate",
+      "levelName": "B",
+      "selectorType": "ID",
+      "description": "Selects the element with a specific id. You can also combine the ID selector with the type selector.",
+      "html": "<div class='table'><my-plate id='fancy'></my-plate><my-plate></my-plate></div>",
+      "example": "#cool selects any element with id='cool'.",
+      "correct": "#fancy"
+    },
+    {
+      "levelNb": 3,
+      "title": "Select the small apples",
+      "levelName": "E",
+      "selectorType": "Class",
+      "description": "The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes.",
+      "html": "<div class='table'><my-apple></my-apple><my-apple class='small'></my-apple><my-plate><my-apple class='small'></my-apple></my-plate><my-plate></my-plate></div>",
+      "example": ".box selects all elements with class='box'",
+      "correct": ".small"
+    },
+    {
+      "levelNb": 4,
+      "title": "Select the apple on the plate",
+      "levelName": "C",
+      "selectorType": "Descendant",
+      "description": "Selects all B inside of A. B is called a descendant because it is inside of another element.",
+      "html": "<div class='table'><my-bento></my-bento><my-plate><my-apple></my-apple></my-plate><my-apple></my-apple></div>",
+      "example": "#fancy  span selects any span elements that are inside of the element with id='fancy'",
+      "correct": "my-plate my-apple"
+    },
+    {
+      "levelNb": 5,
+      "title": "Select the pickle on the fancy plate",
+      "levelName": "D",
+      "selectorType": "Combination",
+      "description": "You can combine any selector with the descendent selector.",
+      "html": "<div class='table'><my-plate><my-orange></my-orange></my-plate><my-plate id='fancy'><my-pickle></my-pickle></my-plate><my-plate><my-pickle></my-pickle></my-plate></div>",
+      "example": "#cool span selects all span elements that are inside of elements with id='cool'",
+      "correct": "#fancy my-pickle"
+    },
+    {
+      "levelNb": 6,
+      "title": "Select all the plates and bentos",
+      "levelName": "F",
+      "selectorType": "Comma Combinator",
+      "description": "Thanks to Shatner technology, this selects all A and B elements. You can combine any selectors this way, and you can specify more than two.",
+      "html": "<div class='table'><my-pickle></my-pickle><my-pickle></my-pickle><my-plate><my-pickle></my-pickle></my-plate><my-bento><my-pickle></my-pickle></my-bento><my-plate><my-pickle></my-pickle></my-plate><my-pickle></my-pickle><my-pickle></my-pickle></div>",
+      "example": "a, p, div selects all a, p, and div elements",
+      "correct": "my-plate, my-bento"
+    },
+    {
+      "levelNb": 7,
+      "title": "Select all the things!",
+      "levelName": "G",
+      "selectorType": "Universal",
+      "description": "You can select all elements with the universal selector!",
+      "html": "<div class='table'><my-apple></my-apple><my-plate><my-orange class='small'/></my-plate><my-bento></my-bento><my-bento><my-orange class='small'></my-orange></my-bento><my-plate id='fancy'></my-plate></div>",
+      "example": "p * selects any element inside all p elements.",
+      "correct": "*"
+    },
+    {
+      "levelNb": 8,
+      "title": "Select the top orange",
+      "levelName": "H",
+      "selectorType": "First Child",
+      "description": "You can select the first child element. A child element is any element that is directly nested in another element. You can combine this pseudo-selector with other selectors.",
+      "html": "<div class='table'><my-bento><my-orange></my-orange><my-orange></my-orange><my-orange></my-orange></my-bento><my-plate></my-plate><my-pickle class='small'></my-pickle><my-orange></my-orange></div>",
+      "example": "p:first-child selects first child p elements.",
+      "correct": "my-bento:first-child"
+    },
+    {
+      "levelNb": 9,
+      "title": "Select the small pickle",
+      "levelName": "I",
+      "selectorType": "Last Child",
+      "description": "You can use this selector to select an element that is the last child element inside of another element. Pro Tip: In cases where there is only one element, that element counts as the first-child, only-child, and last-child!",
+      "html": "<div class='table'><my-plate id='fancy'><my-apple class='small'></my-apple></my-plate><my-plate></my-plate><my-plate><my-orange class='small'></my-orange></my-plate><my-pickle class='small'></my-pickle></div>",
+      "example": "ul li:last-child selects the last li elements inside of any ul.",
+      "correct": ".small:last-child"
+    },
+    {
+      "levelNb": 10,
+      "title": "Select the empty bentos",
+      "levelName": "J",
+      "selectorType": "Empty",
+      "description": "Selects elements that don't have any other elements inside of them.",
+      "html": "<div class='table'><my-bento></my-bento><my-bento><my-pickle class='small'></my-pickle></my-bento><my-plate></my-plate><my-bento></my-bento></div>",
+      "example": "div:empty selects all empty div elements.",
+      "correct": "my-bento:empty"
+    }
+  ]
+}

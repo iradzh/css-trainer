@@ -1,0 +1,33 @@
+.aside {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #000;
+    display: none;
+}
+
+.aside_active {
+    display: flex;
+    z-index: 3;
+    overflow-y: scroll;
+}
+
+.levels__list {
+    width: 100%;
+    color: $color_white;
+    margin: 4em auto;
+    padding-left: 0;
+}
+
+.levels__list li {
+    width: 100%;
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 2rem;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        font-size: 1rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        font-size: 0.9rem;
+    }
+}

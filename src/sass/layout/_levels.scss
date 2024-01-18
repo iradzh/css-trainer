@@ -1,0 +1,129 @@
+.level__header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.level_num {
+    margin: 2rem 0;
+    font-size: 2rem;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        margin: 1.1rem 0;
+        font-size: 1.1rem;
+    }
+}
+
+.level_selector {
+    align-self: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    border: 1px solid $color_light;
+    border-radius: 8px;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+        margin: 1.5rem 0;
+        border-radius: 5px;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        font-size: 0.7rem;
+        padding: 0.3rem;
+        margin: 0.8rem 0;
+        border-radius: 2px;
+    }
+}
+
+.level_description,
+.level_example {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        font-size: 1.1rem;
+        padding: 0 1.4rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+    }
+}
+
+.level_example_title {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid $color_light;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        margin: 1.5rem 0;
+        font-size: 1.3rem;
+        padding-bottom: 0.2rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        margin: 1rem 0;
+        font-size: 1rem;
+        padding-bottom: 0.1rem;
+    }
+}
+
+.level__reset_button {
+    margin-top: auto;
+    width: fit-content;
+    padding: 1rem 1.6rem;
+    color: $color_light;
+    border: none;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background-color: $color_background;
+    border-radius: 3rem;
+    transition: all ease 0.3s;
+    &:hover {
+        color: $color_white;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+.level__progres {
+    color: $color_white;
+    font-size: 3rem;
+    padding: 0 0.5rem 0.4rem 0.6rem;
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        padding: 0 0.5rem 0.4rem 0.6rem;
+        font-size: 2rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        padding: 0 0.5rem 0.4rem 0.6rem;
+        font-size: 1.4rem;
+    }
+}
+
+.level__progres__completed {
+    color: green;
+}
+
+.level__prev,
+.level__next {
+    color: $color_neutral;
+    border: none;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    font-size: 3rem;
+    font-weight: 100;
+
+    &:hover {
+        cursor: pointer;
+        color: $color_white;
+    }
+    @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+        margin: 0 0.5rem;
+        font-size: 2rem;
+    }
+    @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+        margin: 0 0.5rem;
+        font-size: 1.4rem;
+    }
+}

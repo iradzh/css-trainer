@@ -1,0 +1,27 @@
+body {
+    background-color: $color_background;
+}
+
+.block_display,
+.level,
+.footer {
+    background-color: $color_dark;
+}
+
+.editor_head {
+    background-color: $color_dark_0;
+}
+
+.helper__container,
+.editor_table_css {
+    background-color: $color_white;
+}
+
+.editor_num {
+    background-color: $color_light;
+}
+
+.editor_table_html,
+.editor_num_html {
+    background-color: $color_dark_html;
+}
